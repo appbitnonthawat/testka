@@ -1,0 +1,1891 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.7.9 on darwin)" generated="20230313 14:29:01.393" rpa="false" schemaversion="3">
+<suite id="s1" name="Home" source="/Users/panternonny/Desktop/LeWreathNewWeb/testsuites/Home.robot">
+<test id="s1-t1" name="Open Website" line="7">
+<kw name="Open Website" library="resources_home">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>${URL}</arg>
+<arg>gc</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20230313 14:29:01.607" level="INFO">Opening browser 'gc' to base url 'https://lew2022-nextjs-staging.dev-app-bit.com/'.</msg>
+<status status="PASS" starttime="20230313 14:29:01.607" endtime="20230313 14:29:04.836"/>
+</kw>
+<kw name="Maximize Browser Window" library="SeleniumLibrary">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" starttime="20230313 14:29:04.837" endtime="20230313 14:29:05.360"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:01.606" endtime="20230313 14:29:05.360"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:01.606" endtime="20230313 14:29:05.361"/>
+</test>
+<test id="s1-t2" name="Click เลือกซื้อพวงหรีด" line="10">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_productlist}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:05.363" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[2]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:05.363" endtime="20230313 14:29:07.911"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:08.913" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:07.912" endtime="20230313 14:29:08.913"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดทั้งหมด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:08.914" endtime="20230313 14:29:09.166"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:05.362" endtime="20230313 14:29:09.166"/>
+</test>
+<test id="s1-t3" name="Click พื้นที่ให้บริการ" line="15">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_areaservice}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:09.169" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[3]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:09.169" endtime="20230313 14:29:11.261"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:12.263" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:11.261" endtime="20230313 14:29:12.263"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดทั้งหมด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:12.264" endtime="20230313 14:29:12.281"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:09.167" endtime="20230313 14:29:12.281"/>
+</test>
+<test id="s1-t4" name="Click วิธีการสั่งซื้อ" line="20">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_howtoorder}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:12.285" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[4]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:12.284" endtime="20230313 14:29:12.761"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:13.763" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:12.761" endtime="20230313 14:29:13.764"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>วิธีการสั่งซื้อพวงหรีด “LeWreath”</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:13.764" endtime="20230313 14:29:13.794"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:12.282" endtime="20230313 14:29:13.795"/>
+</test>
+<test id="s1-t5" name="Click แจ้งชำระเงิน" line="25">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_paymentconfirm}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:13.798" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[5]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:13.797" endtime="20230313 14:29:14.488"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:15.490" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:14.488" endtime="20230313 14:29:15.491"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>แจ้งชำระเงิน</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:15.492" endtime="20230313 14:29:15.510"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:13.795" endtime="20230313 14:29:15.510"/>
+</test>
+<test id="s1-t6" name="Click ติดตามสถานะ" line="30">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_tracking}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:15.512" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[6]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:15.512" endtime="20230313 14:29:15.973"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:16.974" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:15.973" endtime="20230313 14:29:16.974"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ติดตามสถานะ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:16.974" endtime="20230313 14:29:17.013"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:15.511" endtime="20230313 14:29:17.013"/>
+</test>
+<test id="s1-t7" name="Click เกี่ยวกับ LeWreath" line="35">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_aboutus}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:17.016" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[7]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:17.016" endtime="20230313 14:29:17.223"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:18.226" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:17.224" endtime="20230313 14:29:18.227"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>เกี่ยวกับเรา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:18.227" endtime="20230313 14:29:18.271"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:17.014" endtime="20230313 14:29:18.271"/>
+</test>
+<test id="s1-t8" name="Click ลูกค้าองค์กร" line="40">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_company}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:18.274" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[8]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:18.273" endtime="20230313 14:29:20.784"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>เลอหรีด รับจัดพวงหรีดในนามบริษัท</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:20.785" endtime="20230313 14:29:20.808"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>คุณภาพและบริการเป็นเลิศ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:20.808" endtime="20230313 14:29:20.919"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:18.272" endtime="20230313 14:29:20.920"/>
+</test>
+<test id="s1-t9" name="Click หน้าหลัก" line="45">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_homepage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:20.922" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[1]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:20.922" endtime="20230313 14:29:21.787"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:22.791" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:21.787" endtime="20230313 14:29:22.791"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ร้านพวงหรีดเลอค่า</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:22.791" endtime="20230313 14:29:22.899"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:20.921" endtime="20230313 14:29:22.899"/>
+</test>
+<test id="s1-t10" name="Click ดูเพิ่มเติมที่แบนเนอร์เสื่อดอกไม้ประดิษฐ์" line="50">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_homepage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:22.903" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[1]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:22.902" endtime="20230313 14:29:23.431"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ร้านพวงหรีดเลอค่า</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:23.431" endtime="20230313 14:29:23.586"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${slide_banner_flowermat}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${slide_banner_flowermat}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<msg timestamp="20230313 14:29:25.836" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-385.png"&gt;&lt;img src="selenium-screenshot-385.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:29:25.837" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd05fd chromedriver + 472573
+3   chromedriver                        0x000000010a062f38 chromedriver + 1072952
+4   chromedriver                        0x000000010a03dfb2 chromedriver + 921522
+5   chromedriver                        0x000000010a058c0f chromedriver + 1031183
+6   chromedriver                        0x000000010a03dd23 chromedriver + 920867
+7   chromedriver                        0x000000010a004a4b chromedriver + 686667
+8   chromedriver                        0x000000010a006044 chromedriver + 692292
+9   chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+10  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+11  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+12  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+13  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+14  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+15  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+16  chromedriver                        0x000000010a4176de chromedriver + 4957918
+17  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230313 14:29:23.587" endtime="20230313 14:29:25.839"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:23.586" endtime="20230313 14:29:25.839"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:26.841" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:25.839" endtime="20230313 14:29:26.841"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>${slide_banner_flowermat}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${slide_banner_flowermat}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:26.842" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[1]/div[1]/ul[1]/li[1]/button[1]'.</msg>
+<status status="PASS" starttime="20230313 14:29:26.841" endtime="20230313 14:29:26.891"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:26.841" endtime="20230313 14:29:26.891"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:27.893" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:26.891" endtime="20230313 14:29:27.893"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${banner_flowermat}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:27.894" level="INFO">Clicking element '//*[@id="__next"]/main/div[1]/div/div/div/div/div[2]/div/a/div/img'.</msg>
+<status status="PASS" starttime="20230313 14:29:27.893" endtime="20230313 14:29:28.846"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดเสื่อ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:28.846" endtime="20230313 14:29:28.873"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:31.874" level="INFO">Slept 3 seconds</msg>
+<status status="PASS" starttime="20230313 14:29:28.874" endtime="20230313 14:29:31.874"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:22.900" endtime="20230313 14:29:31.875"/>
+</test>
+<test id="s1-t11" name="Click Logo LEW" line="66">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${logo_lew}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:31.877" level="INFO">Clicking element '//*[@id="__next"]/header/div[3]/div/div[1]/div[2]/div/div[1]/div/a/span/img'.</msg>
+<status status="PASS" starttime="20230313 14:29:31.876" endtime="20230313 14:29:31.949"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:32.950" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:31.949" endtime="20230313 14:29:32.950"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:31.876" endtime="20230313 14:29:32.951"/>
+</test>
+<test id="s1-t12" name="Click ดูแบนเนอร์ LEW New Collection" line="70">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ร้านพวงหรีดเลอค่า</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:32.953" endtime="20230313 14:29:32.966"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${slide_banner_newcollection}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${slide_banner_newcollection}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<msg timestamp="20230313 14:29:34.886" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-386.png"&gt;&lt;img src="selenium-screenshot-386.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:29:34.887" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd05fd chromedriver + 472573
+3   chromedriver                        0x000000010a062f38 chromedriver + 1072952
+4   chromedriver                        0x000000010a03dfb2 chromedriver + 921522
+5   chromedriver                        0x000000010a058c0f chromedriver + 1031183
+6   chromedriver                        0x000000010a03dd23 chromedriver + 920867
+7   chromedriver                        0x000000010a004a4b chromedriver + 686667
+8   chromedriver                        0x000000010a006044 chromedriver + 692292
+9   chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+10  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+11  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+12  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+13  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+14  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+15  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+16  chromedriver                        0x000000010a4176de chromedriver + 4957918
+17  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230313 14:29:32.967" endtime="20230313 14:29:34.887"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:32.966" endtime="20230313 14:29:34.887"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:35.888" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:34.888" endtime="20230313 14:29:35.889"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>${slide_banner_newcollection}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${slide_banner_newcollection}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:35.893" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[1]/div[1]/ul[1]/li[2]/button[1]'.</msg>
+<status status="PASS" starttime="20230313 14:29:35.890" endtime="20230313 14:29:35.945"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:35.889" endtime="20230313 14:29:35.945"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:36.946" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:35.945" endtime="20230313 14:29:36.947"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${banner_newcollection}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:36.948" level="INFO">Clicking element '//*[@id="__next"]/main/div[1]/div/div/div/div/div[3]/div/a/div/img'.</msg>
+<status status="PASS" starttime="20230313 14:29:36.947" endtime="20230313 14:29:37.785"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดดอกไม้สด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:37.785" endtime="20230313 14:29:37.806"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:38.809" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:37.807" endtime="20230313 14:29:38.809"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:32.952" endtime="20230313 14:29:38.810"/>
+</test>
+<test id="s1-t13" name="Click ดูแบนเนอร์พวงหรีดพัดลมดอกไม้ประดิษฐ์" line="84">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_homepage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:38.816" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[1]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:38.815" endtime="20230313 14:29:39.533"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ร้านพวงหรีดเลอค่า</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:39.533" endtime="20230313 14:29:39.551"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${slide_banner_artificail_flower_fan}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${slide_banner_artificail_flower_fan}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<msg timestamp="20230313 14:29:41.934" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-387.png"&gt;&lt;img src="selenium-screenshot-387.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:29:41.935" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd05fd chromedriver + 472573
+3   chromedriver                        0x000000010a062f38 chromedriver + 1072952
+4   chromedriver                        0x000000010a03dfb2 chromedriver + 921522
+5   chromedriver                        0x000000010a058c0f chromedriver + 1031183
+6   chromedriver                        0x000000010a03dd23 chromedriver + 920867
+7   chromedriver                        0x000000010a004a4b chromedriver + 686667
+8   chromedriver                        0x000000010a006044 chromedriver + 692292
+9   chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+10  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+11  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+12  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+13  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+14  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+15  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+16  chromedriver                        0x000000010a4176de chromedriver + 4957918
+17  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230313 14:29:39.552" endtime="20230313 14:29:41.937"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:39.552" endtime="20230313 14:29:41.937"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:42.939" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:41.937" endtime="20230313 14:29:42.939"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>${slide_banner_artificail_flower_fan}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${slide_banner_artificail_flower_fan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:42.941" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[1]/div[1]/ul[1]/li[3]/button[1]'.</msg>
+<status status="PASS" starttime="20230313 14:29:42.940" endtime="20230313 14:29:42.997"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:42.940" endtime="20230313 14:29:42.997"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:44.000" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:42.998" endtime="20230313 14:29:44.000"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${banner_artificial_flower_fan}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:44.001" level="INFO">Clicking element '//*[@id="__next"]/main/div[1]/div/div/div/div/div[4]/div/a/div/img'.</msg>
+<status status="PASS" starttime="20230313 14:29:44.000" endtime="20230313 14:29:45.117"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดพัดลมดอกไม้ประดิษฐ์</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:45.118" endtime="20230313 14:29:45.157"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:46.158" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:45.157" endtime="20230313 14:29:46.158"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:38.811" endtime="20230313 14:29:46.159"/>
+</test>
+<test id="s1-t14" name="Click ปุ่มดูพวงหรีดที่แบนเนอร์" line="99">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_homepage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:46.163" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[1]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:46.162" endtime="20230313 14:29:46.770"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ร้านพวงหรีดเลอค่า</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:46.770" endtime="20230313 14:29:46.788"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:48.790" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:29:46.789" endtime="20230313 14:29:48.790"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>${slide_banner_lew}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>${slide_banner_lew}</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<msg timestamp="20230313 14:29:50.709" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-388.png"&gt;&lt;img src="selenium-screenshot-388.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:29:50.710" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd05fd chromedriver + 472573
+3   chromedriver                        0x000000010a062f38 chromedriver + 1072952
+4   chromedriver                        0x000000010a03dfb2 chromedriver + 921522
+5   chromedriver                        0x000000010a058c0f chromedriver + 1031183
+6   chromedriver                        0x000000010a03dd23 chromedriver + 920867
+7   chromedriver                        0x000000010a004a4b chromedriver + 686667
+8   chromedriver                        0x000000010a006044 chromedriver + 692292
+9   chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+10  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+11  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+12  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+13  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+14  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+15  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+16  chromedriver                        0x000000010a4176de chromedriver + 4957918
+17  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230313 14:29:48.791" endtime="20230313 14:29:50.710"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:48.791" endtime="20230313 14:29:50.710"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:51.712" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:50.711" endtime="20230313 14:29:51.712"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Click Element</arg>
+<arg>${slide_banner_lew}</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${slide_banner_lew}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:51.714" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[1]/div[1]/ul[1]/li[4]/button[1]'.</msg>
+<status status="PASS" starttime="20230313 14:29:51.713" endtime="20230313 14:29:51.767"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:51.713" endtime="20230313 14:29:51.767"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>เปี่ยมคุณค่า</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:51.767" endtime="20230313 14:29:51.794"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:52.797" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:29:51.795" endtime="20230313 14:29:52.797"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${banner_lew}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:52.799" level="INFO">Clicking element '//*[@id="__next"]/main/div[1]/div/div/div/div/div[5]/div/div/img'.</msg>
+<msg timestamp="20230313 14:29:54.311" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-389.png"&gt;&lt;img src="selenium-screenshot-389.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:29:54.311" level="FAIL">Element with locator '//*[@id="__next"]/main/div[1]/div/div/div/div/div[5]/div/div/img' not found.</msg>
+<status status="FAIL" starttime="20230313 14:29:52.798" endtime="20230313 14:29:54.315"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>3</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<status status="NOT RUN" starttime="20230313 14:29:54.316" endtime="20230313 14:29:54.316"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230313 14:29:54.316" endtime="20230313 14:29:54.316"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ของเรา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="NOT RUN" starttime="20230313 14:29:54.316" endtime="20230313 14:29:54.316"/>
+</kw>
+<status status="FAIL" starttime="20230313 14:29:46.160" endtime="20230313 14:29:54.317">Element with locator '//*[@id="__next"]/main/div[1]/div/div/div/div/div[5]/div/div/img' not found.</status>
+</test>
+<test id="s1-t15" name="Click ช่องค้นหา" line="117">
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_homepage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:54.320" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[1]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:29:54.320" endtime="20230313 14:29:54.887"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>หน้าหลัก</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:29:54.887" endtime="20230313 14:29:54.913"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="inputSearchBarDesktop"]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:54.914" level="INFO">Clicking element '//*[@id="inputSearchBarDesktop"]'.</msg>
+<status status="PASS" starttime="20230313 14:29:54.914" endtime="20230313 14:29:55.267"/>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<arg>//*[@id="inputSearchBarDesktop"]</arg>
+<arg>พวงหรีดดอกไม้สด</arg>
+<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
+<msg timestamp="20230313 14:29:55.268" level="INFO">Typing text 'พวงหรีดดอกไม้สด' into text field '//*[@id="inputSearchBarDesktop"]'.</msg>
+<status status="PASS" starttime="20230313 14:29:55.267" endtime="20230313 14:29:55.505"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:29:57.506" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:29:55.505" endtime="20230313 14:29:57.506"/>
+</kw>
+<kw name="Press Keys" library="SeleniumLibrary">
+<arg>//*[@id="inputSearchBarDesktop"]</arg>
+<arg>ENTER</arg>
+<doc>Simulates the user pressing key(s) to an element or on the active browser.</doc>
+<msg timestamp="20230313 14:29:57.507" level="INFO">Sending key(s) ('ENTER',) to //*[@id="inputSearchBarDesktop"] element.</msg>
+<msg timestamp="20230313 14:29:57.795" level="INFO">Pressing special key ENTER to element.</msg>
+<msg timestamp="20230313 14:29:57.796" level="INFO">Releasing special key ENTER.</msg>
+<status status="PASS" starttime="20230313 14:29:57.506" endtime="20230313 14:29:58.793"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:00.794" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:29:58.794" endtime="20230313 14:30:00.795"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_homepage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:00.796" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[1]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:30:00.795" endtime="20230313 14:30:01.400"/>
+</kw>
+<status status="PASS" starttime="20230313 14:29:54.318" endtime="20230313 14:30:01.401"/>
+</test>
+<test id="s1-t16" name="CLick ปุ่มสมัครสมาชิกฟรี/เข้าสู่ระบบ" line="127">
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>สมัครสมาชิกฟรี/เข้าสู่ระบบ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:01.404" endtime="20230313 14:30:01.435"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:02.437" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:01.436" endtime="20230313 14:30:02.437"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${register_login_button}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:02.438" level="INFO">Clicking element '//header/div[3]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/div[2]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:30:02.438" endtime="20230313 14:30:02.755"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:04.757" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:02.756" endtime="20230313 14:30:04.757"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_homepage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:04.758" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[1]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:30:04.757" endtime="20230313 14:30:05.496"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:01.402" endtime="20230313 14:30:05.497"/>
+</test>
+<test id="s1-t17" name="Click ตะกร้าสินค้า" line="134">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:06.500" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:05.500" endtime="20230313 14:30:06.501"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>หน้าหลัก</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:06.501" endtime="20230313 14:30:06.590"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${icon_cart}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:06.591" level="INFO">Clicking element '//header/div[3]/div[1]/div[1]/div[2]/div[1]/div[3]/div[1]/a[1]/span[1]/span[1]/img[1]'.</msg>
+<status status="PASS" starttime="20230313 14:30:06.591" endtime="20230313 14:30:06.726"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:08.728" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:06.727" endtime="20230313 14:30:08.728"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>${Menu_homepage}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:08.730" level="INFO">Clicking element '//*[@id="ec-main-menu-desk"]/div/div/div/div/ul/span[1]/div/li/a'.</msg>
+<status status="PASS" starttime="20230313 14:30:08.729" endtime="20230313 14:30:09.369"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:05.498" endtime="20230313 14:30:09.370"/>
+</test>
+<test id="s1-t18" name="ตรวจสอบเนื้อหาหน้า Home" line="141">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[2]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[2]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<msg timestamp="20230313 14:30:11.238" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-390.png"&gt;&lt;img src="selenium-screenshot-390.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:30:11.239" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd05fd chromedriver + 472573
+3   chromedriver                        0x000000010a062f38 chromedriver + 1072952
+4   chromedriver                        0x000000010a03dfb2 chromedriver + 921522
+5   chromedriver                        0x000000010a058c0f chromedriver + 1031183
+6   chromedriver                        0x000000010a03dd23 chromedriver + 920867
+7   chromedriver                        0x000000010a004a4b chromedriver + 686667
+8   chromedriver                        0x000000010a006044 chromedriver + 692292
+9   chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+10  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+11  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+12  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+13  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+14  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+15  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+16  chromedriver                        0x000000010a4176de chromedriver + 4957918
+17  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230313 14:30:09.373" endtime="20230313 14:30:11.239"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:09.373" endtime="20230313 14:30:11.239"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Le Wreath</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:11.239" endtime="20230313 14:30:11.253"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ร้านพวงหรีดเลอค่า</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:11.253" endtime="20230313 14:30:11.263"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ประณีตทุกขั้นตอน ส่งพวงหรีดด้วยความอาลัยอย่างสมเกียรติ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:11.264" endtime="20230313 14:30:11.276"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[2]/div[1]/div[1]/div[2]/h2[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[2]/div[1]/div[1]/div[2]/h2[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<msg timestamp="20230313 14:30:12.871" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-391.png"&gt;&lt;img src="selenium-screenshot-391.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:30:12.872" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd05fd chromedriver + 472573
+3   chromedriver                        0x000000010a062f38 chromedriver + 1072952
+4   chromedriver                        0x000000010a03dfb2 chromedriver + 921522
+5   chromedriver                        0x000000010a058c0f chromedriver + 1031183
+6   chromedriver                        0x000000010a03dd23 chromedriver + 920867
+7   chromedriver                        0x000000010a004a4b chromedriver + 686667
+8   chromedriver                        0x000000010a006044 chromedriver + 692292
+9   chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+10  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+11  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+12  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+13  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+14  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+15  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+16  chromedriver                        0x000000010a4176de chromedriver + 4957918
+17  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230313 14:30:11.277" endtime="20230313 14:30:12.872"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:11.276" endtime="20230313 14:30:12.872"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>Le Wreath ร้านพวงหรีดเลอค่า ประณีตทุกขั้นตอน</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:12.872" endtime="20230313 14:30:12.885"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ด้วยฝีมือช่างผู้เชี่ยวชาญมากกว่า 10 ปี</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:12.885" endtime="20230313 14:30:12.897"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>งานเปี่ยมไปด้วยคุณค่า ส่งพวงหรีดแสดงความอาลัย</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:12.897" endtime="20230313 14:30:12.909"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ผู้ล่วงลับได้อย่างสมเกียรติ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:12.910" endtime="20230313 14:30:12.921"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ด้วยประสบการณ์กว่า 5 ปี หลากหลายองค์กรไว้ใจเรา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:12.922" endtime="20230313 14:30:12.933"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:09.371" endtime="20230313 14:30:12.933"/>
+</test>
+<test id="s1-t19" name="พวงหรีดของเรา" line="157">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<msg timestamp="20230313 14:30:13.792" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-392.png"&gt;&lt;img src="selenium-screenshot-392.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:30:13.793" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd05fd chromedriver + 472573
+3   chromedriver                        0x000000010a062f38 chromedriver + 1072952
+4   chromedriver                        0x000000010a03dfb2 chromedriver + 921522
+5   chromedriver                        0x000000010a058c0f chromedriver + 1031183
+6   chromedriver                        0x000000010a03dd23 chromedriver + 920867
+7   chromedriver                        0x000000010a004a4b chromedriver + 686667
+8   chromedriver                        0x000000010a006044 chromedriver + 692292
+9   chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+10  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+11  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+12  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+13  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+14  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+15  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+16  chromedriver                        0x000000010a4176de chromedriver + 4957918
+17  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230313 14:30:12.935" endtime="20230313 14:30:13.793"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:12.934" endtime="20230313 14:30:13.793"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดของเรา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:13.793" endtime="20230313 14:30:13.804"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดดอกไม้สด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:13.804" endtime="20230313 14:30:13.816"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:14.818" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:13.816" endtime="20230313 14:30:14.818"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]/a[1]/p[1]/img[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:14.819" endtime="20230313 14:30:14.845"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดพัดลมดอกไม้ประดิษฐ์</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:14.846" endtime="20230313 14:30:14.863"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:15.865" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:14.864" endtime="20230313 14:30:15.866"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]/p[1]/img[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:15.866" endtime="20230313 14:30:15.881"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดพัดลมดอกไม้สด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:15.882" endtime="20230313 14:30:15.896"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:16.897" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:15.897" endtime="20230313 14:30:16.897"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/div[1]/a[1]/p[1]/img[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:16.898" endtime="20230313 14:30:16.920"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดกระดาษสา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:16.921" endtime="20230313 14:30:16.942"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:17.943" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:16.942" endtime="20230313 14:30:17.944"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/div[1]/a[1]/p[1]/img[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:17.944" endtime="20230313 14:30:17.964"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดเสื่อ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:17.964" endtime="20230313 14:30:17.984"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:18.986" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:17.984" endtime="20230313 14:30:18.986"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[5]/div[1]/a[1]/p[1]/img[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:18.986" endtime="20230313 14:30:19.008"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[6]/div[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[6]/div[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<msg timestamp="20230313 14:30:19.385" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-393.png"&gt;&lt;img src="selenium-screenshot-393.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:30:19.385" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd05fd chromedriver + 472573
+3   chromedriver                        0x000000010a062f38 chromedriver + 1072952
+4   chromedriver                        0x000000010a03dfb2 chromedriver + 921522
+5   chromedriver                        0x000000010a058c0f chromedriver + 1031183
+6   chromedriver                        0x000000010a03dd23 chromedriver + 920867
+7   chromedriver                        0x000000010a004a4b chromedriver + 686667
+8   chromedriver                        0x000000010a006044 chromedriver + 692292
+9   chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+10  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+11  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+12  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+13  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+14  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+15  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+16  chromedriver                        0x000000010a4176de chromedriver + 4957918
+17  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230313 14:30:19.009" endtime="20230313 14:30:19.385"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:19.009" endtime="20230313 14:30:19.385"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดต้นไม้</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:19.386" endtime="20230313 14:30:19.404"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:20.407" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:19.404" endtime="20230313 14:30:20.407"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[5]/div[1]/a[1]/p[1]/img[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:20.407" endtime="20230313 14:30:20.418"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดผ้า</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:20.419" endtime="20230313 14:30:20.438"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:21.439" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:20.438" endtime="20230313 14:30:21.439"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[7]/div[1]/a[1]/p[1]/img[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:21.440" endtime="20230313 14:30:21.462"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดนาฬิกา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:21.462" endtime="20230313 14:30:21.477"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:22.478" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:21.478" endtime="20230313 14:30:22.479"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[8]/div[1]/a[1]/p[1]/img[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:22.479" endtime="20230313 14:30:22.504"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดกระดาษ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:22.504" endtime="20230313 14:30:22.526"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:23.527" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:22.526" endtime="20230313 14:30:23.528"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[9]/div[1]/a[1]/p[1]/img[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:23.528" endtime="20230313 14:30:23.547"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ดูพวงหรีดทั้งหมด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:23.547" endtime="20230313 14:30:23.562"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:24.563" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:23.562" endtime="20230313 14:30:24.563"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:12.933" endtime="20230313 14:30:24.564"/>
+</test>
+<test id="s1-t20" name="พวงหรีดของเรา_พวงหรีดดอกไม้สด" line="203">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]/a[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230313 14:30:24.570" endtime="20230313 14:30:24.852"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:24.570" endtime="20230313 14:30:24.852"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:26.853" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:24.853" endtime="20230313 14:30:26.854"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดดอกไม้สด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:26.854" endtime="20230313 14:30:26.870"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]/a[1]/p[1]/img[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:26.872" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[1]/div[1]/a[1]/p[1]/img[1]'.</msg>
+<status status="PASS" starttime="20230313 14:30:26.871" endtime="20230313 14:30:27.023"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:29.024" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:27.024" endtime="20230313 14:30:29.024"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230313 14:30:29.053" level="INFO">${handles} = ['CDwindow-54E5C9F40E876391B3975CA748860926', 'CDwindow-A525415488BDF3D24E806156B0C057C7']</msg>
+<status status="PASS" starttime="20230313 14:30:29.025" endtime="20230313 14:30:29.053"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:30:29.054" endtime="20230313 14:30:29.192"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดดอกไม้สด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:29.192" endtime="20230313 14:30:29.463"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230313 14:30:29.463" endtime="20230313 14:30:29.517"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:30:29.517" endtime="20230313 14:30:29.535"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:30.536" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:29.535" endtime="20230313 14:30:30.537"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:24.565" endtime="20230313 14:30:30.538"/>
+</test>
+<test id="s1-t21" name=" พวงหรีดของเรา_พวงหรีดพัดลมดอกไม้ประดิษฐ์" line="222">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230313 14:30:30.545" endtime="20230313 14:30:30.836"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:30.544" endtime="20230313 14:30:30.836"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:32.838" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:30.837" endtime="20230313 14:30:32.838"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดพัดลมดอกไม้ประดิษฐ์</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:32.839" endtime="20230313 14:30:32.855"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:32.856" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:30:32.856" endtime="20230313 14:30:32.939"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:34.942" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:32.939" endtime="20230313 14:30:34.942"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230313 14:30:34.961" level="INFO">${handles} = ['CDwindow-54E5C9F40E876391B3975CA748860926', 'CDwindow-F3B754AF3DB076D812919425287737E2']</msg>
+<status status="PASS" starttime="20230313 14:30:34.943" endtime="20230313 14:30:34.961"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:30:34.962" endtime="20230313 14:30:35.135"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดพัดลมดอกไม้ประดิษฐ์</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:35.136" endtime="20230313 14:30:35.235"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230313 14:30:35.235" endtime="20230313 14:30:35.292"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:30:35.292" endtime="20230313 14:30:35.307"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:36.308" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:35.307" endtime="20230313 14:30:36.309"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:30.539" endtime="20230313 14:30:36.310"/>
+</test>
+<test id="s1-t22" name=" พวงหรีดของเรา_พวงหรีดพัดลมดอกไม้สด" line="238">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230313 14:30:36.316" endtime="20230313 14:30:36.627"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:36.316" endtime="20230313 14:30:36.627"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:38.629" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:36.627" endtime="20230313 14:30:38.629"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดพัดลมดอกไม้สด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:38.629" endtime="20230313 14:30:38.646"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:38.647" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[3]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:30:38.647" endtime="20230313 14:30:38.745"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:40.747" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:38.745" endtime="20230313 14:30:40.747"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230313 14:30:40.758" level="INFO">${handles} = ['CDwindow-54E5C9F40E876391B3975CA748860926', 'CDwindow-186B97FAD9BF8EEE5DDF41840A7ECEAC']</msg>
+<status status="PASS" starttime="20230313 14:30:40.748" endtime="20230313 14:30:40.759"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:30:40.759" endtime="20230313 14:30:40.889"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดพัดลมดอกไม้สด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:40.889" endtime="20230313 14:30:41.006"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230313 14:30:41.007" endtime="20230313 14:30:41.058"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:30:41.058" endtime="20230313 14:30:41.079"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:42.082" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:41.080" endtime="20230313 14:30:42.082"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:36.312" endtime="20230313 14:30:42.082"/>
+</test>
+<test id="s1-t23" name=" พวงหรีดของเรา_พวงหรีดกระดาษสา" line="254">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230313 14:30:42.087" endtime="20230313 14:30:42.371"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:42.087" endtime="20230313 14:30:42.372"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:44.373" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:42.372" endtime="20230313 14:30:44.374"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดกระดาษสา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:44.374" endtime="20230313 14:30:44.392"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:44.392" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[4]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:30:44.392" endtime="20230313 14:30:44.484"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:46.485" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:44.485" endtime="20230313 14:30:46.485"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230313 14:30:46.534" level="INFO">${handles} = ['CDwindow-54E5C9F40E876391B3975CA748860926', 'CDwindow-28C35D893A3ED91CB1D698C328AE2843']</msg>
+<status status="PASS" starttime="20230313 14:30:46.486" endtime="20230313 14:30:46.534"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:30:46.535" endtime="20230313 14:30:46.693"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดกระดาษสา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:46.694" endtime="20230313 14:30:46.762"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230313 14:30:46.762" endtime="20230313 14:30:46.835"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:30:46.835" endtime="20230313 14:30:46.848"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:47.849" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:46.848" endtime="20230313 14:30:47.849"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:42.083" endtime="20230313 14:30:47.850"/>
+</test>
+<test id="s1-t24" name=" พวงหรีดของเรา_พวงหรีดเสื่อ" line="270">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230313 14:30:47.853" endtime="20230313 14:30:48.143"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:47.853" endtime="20230313 14:30:48.143"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:50.145" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:48.144" endtime="20230313 14:30:50.145"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดเสื่อ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:50.146" endtime="20230313 14:30:50.163"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[5]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:50.164" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[5]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:30:50.163" endtime="20230313 14:30:50.249"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:52.252" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:50.249" endtime="20230313 14:30:52.252"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230313 14:30:52.259" level="INFO">${handles} = ['CDwindow-54E5C9F40E876391B3975CA748860926', 'CDwindow-02C3775E96FAE57EB7E6B67445ECF973']</msg>
+<status status="PASS" starttime="20230313 14:30:52.252" endtime="20230313 14:30:52.259"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:30:52.260" endtime="20230313 14:30:52.425"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดเสื่อ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:52.426" endtime="20230313 14:30:52.478"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230313 14:30:52.478" endtime="20230313 14:30:52.550"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:30:52.551" endtime="20230313 14:30:52.561"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:53.563" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:30:52.561" endtime="20230313 14:30:53.563"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:47.850" endtime="20230313 14:30:53.564"/>
+</test>
+<test id="s1-t25" name=" พวงหรีดของเรา_พวงหรีดต้นไม้" line="286">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230313 14:30:53.569" endtime="20230313 14:30:53.861"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:53.568" endtime="20230313 14:30:53.861"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>5</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:30:58.862" level="INFO">Slept 5 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:53.861" endtime="20230313 14:30:58.862"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดต้นไม้</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:30:58.862" endtime="20230313 14:30:58.882"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//*[@id="__next"]/main/div[4]/div/div/div/div[2]/div/ul/li[6]/div/a/p/img</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:30:58.883" level="INFO">Clicking element '//*[@id="__next"]/main/div[4]/div/div/div/div[2]/div/ul/li[6]/div/a/p/img'.</msg>
+<status status="PASS" starttime="20230313 14:30:58.882" endtime="20230313 14:30:58.991"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:00.993" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:30:58.991" endtime="20230313 14:31:00.993"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230313 14:31:01.038" level="INFO">${handles} = ['CDwindow-54E5C9F40E876391B3975CA748860926', 'CDwindow-A9FD573B3708BE8B7591BD29399C677C']</msg>
+<status status="PASS" starttime="20230313 14:31:00.993" endtime="20230313 14:31:01.038"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:31:01.038" endtime="20230313 14:31:01.213"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดต้นไม้</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:01.214" endtime="20230313 14:31:01.301"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230313 14:31:01.301" endtime="20230313 14:31:01.369"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:31:01.369" endtime="20230313 14:31:01.381"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:02.385" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:31:01.382" endtime="20230313 14:31:02.385"/>
+</kw>
+<status status="PASS" starttime="20230313 14:30:53.565" endtime="20230313 14:31:02.386"/>
+</test>
+<test id="s1-t26" name=" พวงหรีดของเรา_พวงหรีดผ้า" line="302">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230313 14:31:02.392" endtime="20230313 14:31:02.711"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:02.391" endtime="20230313 14:31:02.711"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:04.713" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:31:02.712" endtime="20230313 14:31:04.713"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดผ้า</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:04.714" endtime="20230313 14:31:04.726"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[7]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:31:04.727" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[7]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:31:04.726" endtime="20230313 14:31:04.815"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:06.818" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:31:04.816" endtime="20230313 14:31:06.818"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230313 14:31:06.825" level="INFO">${handles} = ['CDwindow-54E5C9F40E876391B3975CA748860926', 'CDwindow-1B501EE93D405172E4D5651D03A4784B']</msg>
+<status status="PASS" starttime="20230313 14:31:06.818" endtime="20230313 14:31:06.825"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:31:06.826" endtime="20230313 14:31:07.134"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดผ้า</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:07.134" endtime="20230313 14:31:07.187"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230313 14:31:07.188" endtime="20230313 14:31:07.263"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:31:07.263" endtime="20230313 14:31:07.280"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:08.283" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:31:07.281" endtime="20230313 14:31:08.283"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:02.388" endtime="20230313 14:31:08.284"/>
+</test>
+<test id="s1-t27" name=" พวงหรีดของเรา_พวงหรีดนาฬิกา" line="318">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230313 14:31:08.290" endtime="20230313 14:31:08.578"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:08.289" endtime="20230313 14:31:08.578"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:10.580" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:31:08.579" endtime="20230313 14:31:10.580"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดนาฬิกา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:10.581" endtime="20230313 14:31:10.600"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[8]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:31:10.600" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[8]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:31:10.600" endtime="20230313 14:31:10.702"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:12.704" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:31:10.702" endtime="20230313 14:31:12.704"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230313 14:31:12.720" level="INFO">${handles} = ['CDwindow-54E5C9F40E876391B3975CA748860926', 'CDwindow-1CF781083ACBDB30FF24AB9E9AA49BFB']</msg>
+<status status="PASS" starttime="20230313 14:31:12.705" endtime="20230313 14:31:12.720"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:31:12.720" endtime="20230313 14:31:12.877"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดนาฬิกา</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:12.877" endtime="20230313 14:31:12.934"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230313 14:31:12.934" endtime="20230313 14:31:13.016"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:31:13.016" endtime="20230313 14:31:13.067"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:14.070" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:31:13.068" endtime="20230313 14:31:14.071"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:08.285" endtime="20230313 14:31:14.072"/>
+</test>
+<test id="s1-t28" name="พวงหรีดของเรา_พวงหรีดกระดาษ" line="334">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230313 14:31:14.078" endtime="20230313 14:31:14.363"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:14.077" endtime="20230313 14:31:14.363"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:16.365" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:31:14.364" endtime="20230313 14:31:16.365"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดกระดาษ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:16.366" endtime="20230313 14:31:16.387"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[9]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:31:16.388" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[9]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:31:16.387" endtime="20230313 14:31:16.501"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:18.504" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:31:16.502" endtime="20230313 14:31:18.504"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230313 14:31:18.512" level="INFO">${handles} = ['CDwindow-54E5C9F40E876391B3975CA748860926', 'CDwindow-5542834CAAFE508D8FC0E6F873BF3FEE']</msg>
+<status status="PASS" starttime="20230313 14:31:18.504" endtime="20230313 14:31:18.512"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:31:18.513" endtime="20230313 14:31:18.650"/>
+</kw>
+<kw name="Wait Until Page Contains Element" library="SeleniumLibrary">
+<arg>//header/nav[1]/div[1]/div[1]/div[1]/div[1]/a[1]/img[1]</arg>
+<doc>Waits until the element ``locator`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:18.650" endtime="20230313 14:31:19.177"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230313 14:31:19.177" endtime="20230313 14:31:19.246"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:31:19.246" endtime="20230313 14:31:19.267"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:20.268" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:31:19.267" endtime="20230313 14:31:20.268"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:14.073" endtime="20230313 14:31:20.269"/>
+</test>
+<test id="s1-t29" name="พวงหรีดของเรา_ดูพวงหรีดทั้งหมด" line="350">
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[2]/div[1]/a[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<status status="PASS" starttime="20230313 14:31:20.272" endtime="20230313 14:31:20.566"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:20.272" endtime="20230313 14:31:20.566"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:22.568" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:31:20.567" endtime="20230313 14:31:22.568"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ดูพวงหรีดทั้งหมด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:22.569" endtime="20230313 14:31:22.591"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[10]/div[1]/a[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:31:22.592" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[4]/div[1]/div[1]/div[1]/div[2]/div[1]/ul[1]/li[10]/div[1]/a[1]'.</msg>
+<status status="PASS" starttime="20230313 14:31:22.591" endtime="20230313 14:31:22.683"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>2</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:24.684" level="INFO">Slept 2 seconds</msg>
+<status status="PASS" starttime="20230313 14:31:22.683" endtime="20230313 14:31:24.684"/>
+</kw>
+<kw name="Get Window Handles" library="SeleniumLibrary">
+<var>${handles}</var>
+<doc>Returns all child window handles of the selected browser as a list.</doc>
+<msg timestamp="20230313 14:31:24.698" level="INFO">${handles} = ['CDwindow-54E5C9F40E876391B3975CA748860926', 'CDwindow-08821850A255365ED43EE4C6F13FADF7']</msg>
+<status status="PASS" starttime="20230313 14:31:24.684" endtime="20230313 14:31:24.698"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[1]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:31:24.698" endtime="20230313 14:31:24.811"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดทั้งหมด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:24.811" endtime="20230313 14:31:25.342"/>
+</kw>
+<kw name="Close Window" library="SeleniumLibrary">
+<doc>Closes currently opened and selected browser window/tab.</doc>
+<status status="PASS" starttime="20230313 14:31:25.343" endtime="20230313 14:31:25.411"/>
+</kw>
+<kw name="Switch Window" library="SeleniumLibrary">
+<arg>${handles}[0]</arg>
+<doc>Switches to browser window matching ``locator``.</doc>
+<status status="PASS" starttime="20230313 14:31:25.412" endtime="20230313 14:31:25.444"/>
+</kw>
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:26.446" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:31:25.444" endtime="20230313 14:31:26.446"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:20.269" endtime="20230313 14:31:26.447"/>
+</test>
+<test id="s1-t30" name="ตรวจสอบหัวข้อพวงหรีดแนะนำ" line="366">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:27.453" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:31:26.450" endtime="20230313 14:31:27.453"/>
+</kw>
+<kw name="Run Keyword And Ignore Error" library="BuiltIn">
+<arg>Scroll Element Into View</arg>
+<arg>//body/div[@id='__next']/main[1]/div[5]/div[1]/div[2]/div[1]</arg>
+<doc>Runs the given keyword with the given arguments and ignores possible error.</doc>
+<kw name="Scroll Element Into View" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[5]/div[1]/div[2]/div[1]</arg>
+<doc>Scrolls the element identified by ``locator`` into view.</doc>
+<msg timestamp="20230313 14:31:28.442" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-394.png"&gt;&lt;img src="selenium-screenshot-394.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:31:28.443" level="FAIL">MoveTargetOutOfBoundsException: Message: move target out of bounds
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd05fd chromedriver + 472573
+3   chromedriver                        0x000000010a062f38 chromedriver + 1072952
+4   chromedriver                        0x000000010a03dfb2 chromedriver + 921522
+5   chromedriver                        0x000000010a058c0f chromedriver + 1031183
+6   chromedriver                        0x000000010a03dd23 chromedriver + 920867
+7   chromedriver                        0x000000010a004a4b chromedriver + 686667
+8   chromedriver                        0x000000010a006044 chromedriver + 692292
+9   chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+10  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+11  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+12  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+13  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+14  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+15  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+16  chromedriver                        0x000000010a4176de chromedriver + 4957918
+17  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+18  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230313 14:31:27.454" endtime="20230313 14:31:28.443"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:27.453" endtime="20230313 14:31:28.443"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>พวงหรีดแนะนำ</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:28.443" endtime="20230313 14:31:28.457"/>
+</kw>
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>//button[contains(text(),'สินค้าแนะนำ')]</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20230313 14:31:28.518" level="INFO">Current page contains button '//button[contains(text(),'สินค้าแนะนำ')]'.</msg>
+<status status="PASS" starttime="20230313 14:31:28.458" endtime="20230313 14:31:28.518"/>
+</kw>
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>//button[contains(text(),'สินค้าขายดี')]</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20230313 14:31:28.572" level="INFO">Current page contains button '//button[contains(text(),'สินค้าขายดี')]'.</msg>
+<status status="PASS" starttime="20230313 14:31:28.518" endtime="20230313 14:31:28.572"/>
+</kw>
+<kw name="Page Should Contain Button" library="SeleniumLibrary">
+<arg>//button[contains(text(),'สินค้าลดราคา')]</arg>
+<doc>Verifies button ``locator`` is found from current page.</doc>
+<msg timestamp="20230313 14:31:28.625" level="INFO">Current page contains button '//button[contains(text(),'สินค้าลดราคา')]'.</msg>
+<status status="PASS" starttime="20230313 14:31:28.573" endtime="20230313 14:31:28.626"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ดูพวงหรีดทั้งหมด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:28.626" endtime="20230313 14:31:28.635"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[5]/div[1]/div[2]/div[3]/div[1]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<msg timestamp="20230313 14:31:28.650" level="INFO">Current page contains element '//body/div[@id='__next']/main[1]/div[5]/div[1]/div[2]/div[3]/div[1]'.</msg>
+<status status="PASS" starttime="20230313 14:31:28.635" endtime="20230313 14:31:28.650"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:26.448" endtime="20230313 14:31:28.650"/>
+</test>
+<test id="s1-t31" name="หัวข้อพวงหรีดแนะนำ_คลิกปุ่มดูพวงหรีดทั้งหมด" line="378">
+<kw name="Sleep" library="BuiltIn">
+<arg>1</arg>
+<doc>Pauses the test executed for the given time.</doc>
+<msg timestamp="20230313 14:31:29.655" level="INFO">Slept 1 second</msg>
+<status status="PASS" starttime="20230313 14:31:28.654" endtime="20230313 14:31:29.655"/>
+</kw>
+<kw name="Wait Until Page Contains" library="SeleniumLibrary">
+<arg>ดูพวงหรีดทั้งหมด</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" starttime="20230313 14:31:29.655" endtime="20230313 14:31:29.668"/>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<arg>//body/div[@id='__next']/main[1]/div[5]/div[1]/div[2]/div[2]/a[1]/div[1]</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<msg timestamp="20230313 14:31:29.669" level="INFO">Clicking element '//body/div[@id='__next']/main[1]/div[5]/div[1]/div[2]/div[2]/a[1]/div[1]'.</msg>
+<msg timestamp="20230313 14:31:31.448" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-395.png"&gt;&lt;img src="selenium-screenshot-395.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg timestamp="20230313 14:31:31.449" level="FAIL">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (720, 739)
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd0787 chromedriver + 472967
+3   chromedriver                        0x000000010a01deaf chromedriver + 790191
+4   chromedriver                        0x000000010a01b2b9 chromedriver + 778937
+5   chromedriver                        0x000000010a017ec4 chromedriver + 765636
+6   chromedriver                        0x000000010a0169db chromedriver + 760283
+7   chromedriver                        0x000000010a007303 chromedriver + 697091
+8   chromedriver                        0x000000010a03dfb2 chromedriver + 921522
+9   chromedriver                        0x000000010a006971 chromedriver + 694641
+10  chromedriver                        0x000000010a03e1de chromedriver + 922078
+11  chromedriver                        0x000000010a058c0f chromedriver + 1031183
+12  chromedriver                        0x000000010a03dd23 chromedriver + 920867
+13  chromedriver                        0x000000010a004a4b chromedriver + 686667
+14  chromedriver                        0x000000010a006044 chromedriver + 692292
+15  chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+16  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+17  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+18  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+19  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+20  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+21  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+22  chromedriver                        0x000000010a4176de chromedriver + 4957918
+23  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15
+</msg>
+<status status="FAIL" starttime="20230313 14:31:29.668" endtime="20230313 14:31:31.450"/>
+</kw>
+<kw name="Page Should Contain" library="SeleniumLibrary">
+<arg>พวงหรีดทั้งหมด</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" starttime="20230313 14:31:31.451" endtime="20230313 14:31:31.452"/>
+</kw>
+<kw name="Page Should Contain Element" library="SeleniumLibrary">
+<arg>//h1[contains(text(),'พวงหรีดทั้งหมด')]</arg>
+<doc>Verifies that element ``locator`` is found on the current page.</doc>
+<status status="NOT RUN" starttime="20230313 14:31:31.452" endtime="20230313 14:31:31.452"/>
+</kw>
+<status status="FAIL" starttime="20230313 14:31:28.651" endtime="20230313 14:31:31.453">ElementClickInterceptedException: Message: element click intercepted: Element is not clickable at point (720, 739)
+  (Session info: chrome=111.0.5563.64)
+Stacktrace:
+0   chromedriver                        0x000000010a40f138 chromedriver + 4923704
+1   chromedriver                        0x000000010a3879d3 chromedriver + 4368851
+2   chromedriver                        0x0000000109fd0787 chromedriver + 472967
+3   chromedriver                        0x000000010a01deaf chromedriver + 790191
+4   chromedriver                        0x000000010a01b2b9 chromedriver + 778937
+5   chromedriver                        0x000000010a017ec4 chromedriver + 765636
+6   chromedriver                        0x000000010a0169db chromedriver + 760283
+7   chromedriver                        0x000000010a007303 chromedriver + 697091
+    [ Message content over the limit has been removed. ]
+...hromedriver                        0x000000010a006044 chromedriver + 692292
+15  chromedriver                        0x000000010a3da8fe chromedriver + 4708606
+16  chromedriver                        0x000000010a3dfe22 chromedriver + 4730402
+17  chromedriver                        0x000000010a3e86bf chromedriver + 4765375
+18  chromedriver                        0x000000010a3e0e80 chromedriver + 4734592
+19  chromedriver                        0x000000010a3b1975 chromedriver + 4540789
+20  chromedriver                        0x000000010a402e78 chromedriver + 4873848
+21  chromedriver                        0x000000010a402ff5 chromedriver + 4874229
+22  chromedriver                        0x000000010a4176de chromedriver + 4957918
+23  libsystem_pthread.dylib             0x00007ff812347259 _pthread_start + 125
+24  libsystem_pthread.dylib             0x00007ff812342c7b thread_start + 15</status>
+</test>
+<test id="s1-t32" name="Close Website" line="385">
+<kw name="Close All Browsers" library="SeleniumLibrary">
+<doc>Closes all open browsers and resets the browser cache.</doc>
+<status status="PASS" starttime="20230313 14:31:31.455" endtime="20230313 14:31:31.785"/>
+</kw>
+<status status="PASS" starttime="20230313 14:31:31.454" endtime="20230313 14:31:31.786"/>
+</test>
+<status status="FAIL" starttime="20230313 14:29:01.394" endtime="20230313 14:31:31.787"/>
+</suite>
+<statistics>
+<total>
+<stat pass="30" fail="2" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="30" fail="2" skip="0" id="s1" name="Home">Home</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
